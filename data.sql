@@ -1,0 +1,88 @@
+
+INSERT INTO Books (Book_ID, Title, Author, Genre, Published_Year)
+VALUES 
+(1, 'To Kill a Mockingbird', 'Harper Lee', 'Fiction', 1960),
+(2, '1984', 'George Orwell', 'Dystopian', 1949),
+(3, 'Pride and Prejudice', 'Jane Austen', 'Romance', 1813),
+(4, 'The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 1925),
+(5, 'Moby-Dick', 'Herman Melville', 'Adventure', 1851),
+(6, 'War and Peace', 'Leo Tolstoy', 'Historical', 1869),
+(7, 'The Catcher in the Rye', 'J.D. Salinger', 'Fiction', 1951),
+(8, 'The Hobbit', 'J.R.R. Tolkien', 'Fantasy', 1937),
+(9, 'Brave New World', 'Aldous Huxley', 'Dystopian', 1932),
+(10, 'The Odyssey', 'Homer', 'Epic', -800),
+(11, 'Crime and Punishment', 'Fyodor Dostoevsky', 'Fiction', 1866),
+(12, 'The Brothers Karamazov', 'Fyodor Dostoevsky', 'Fiction', 1880),
+(13, 'Anna Karenina', 'Leo Tolstoy', 'Fiction', 1877),
+(14, 'Madame Bovary', 'Gustave Flaubert', 'Fiction', 1857),
+(15, 'The Divine Comedy', 'Dante Alighieri', 'Epic', 1320),
+(16, 'Hamlet', 'William Shakespeare', 'Tragedy', 1603),
+(17, 'The Iliad', 'Homer', 'Epic', -750),
+(18, 'Don Quixote', 'Miguel de Cervantes', 'Adventure', 1605),
+(19, 'The Scarlet Letter', 'Nathaniel Hawthorne', 'Fiction', 1850),
+(20, 'Les Misérables', 'Victor Hugo', 'Historical', 1862),
+(21, 'Frankenstein', 'Mary Shelley', 'Horror', 1818),
+(22, 'Great Expectations', 'Charles Dickens', 'Fiction', 1861),
+(23, 'Ulysses', 'James Joyce', 'Fiction', 1922),
+(24, 'The Count of Monte Cristo', 'Alexandre Dumas', 'Adventure', 1844),
+(25, 'Jane Eyre', 'Charlotte Brontë', 'Romance', 1847);
+
+
+
+INSERT INTO Members (Member_ID, Name, Address, Phone_Number, Email)
+VALUES 
+(1, 'John Doe', '123 Main St', '555-1234', 'johndoe@example.com'),
+(2, 'Jane Smith', '456 Oak Ave', '555-5678', 'janesmith@example.com'),
+(3, 'Alice Johnson', '789 Pine Rd', '555-8765', 'alicej@example.com'),
+(4, 'Bob Brown', '321 Maple Ln', '555-4321', 'bobbrown@example.com'),
+(5, 'Charlie Davis', '654 Elm St', '555-6543', 'charlied@example.com'),
+(6, 'Diana Evans', '987 Birch Pl', '555-7890', 'dianae@example.com'),
+(7, 'Eve Foster', '246 Cedar St', '555-2468', 'evef@example.com'),
+(8, 'Frank Green', '135 Oak Ln', '555-1357', 'frankg@example.com'),
+(9, 'Grace Hall', '864 Walnut St', '555-8642', 'graceh@example.com'),
+(10, 'Hank Hill', '753 Spruce Rd', '555-7531', 'hankh@example.com'),
+(11, 'Ivy Lee', '369 Poplar Dr', '555-3690', 'ivyl@example.com'),
+(12, 'Jack Moore', '258 Hickory Ln', '555-2584', 'jackm@example.com'),
+(13, 'Karen Nelson', '159 Willow St', '555-1596', 'karenn@example.com'),
+(14, 'Leo Parker', '741 Maple Ave', '555-7413', 'leop@example.com'),
+(15, 'Mona Quinn', '852 Pine Ln', '555-8527', 'monaq@example.com'),
+(16, 'Nina Roberts', '963 Elm Rd', '555-9631', 'ninar@example.com'),
+(17, 'Oscar Scott', '174 Cedar Ln', '555-1745', 'oscars@example.com'),
+(18, 'Paula Turner', '285 Walnut Rd', '555-2859', 'paulat@example.com'),
+(19, 'Quinn Underwood', '396 Birch St', '555-3962', 'quinnu@example.com'),
+(20, 'Ruth Vance', '507 Spruce Ln', '555-5078', 'ruthv@example.com'),
+(21, 'Sam Waters', '618 Poplar Ln', '555-6183', 'samw@example.com'),
+(22, 'Tina Young', '729 Hickory Rd', '555-7294', 'tinay@example.com'),
+(23, 'Uma Zimmer', '831 Willow Ln', '555-8312', 'umaz@example.com'),
+(24, 'Victor Adams', '942 Pine St', '555-9425', 'victora@example.com'),
+(25, 'Wendy Baker', '105 Maple Ln', '555-1057', 'wendyb@example.com');
+
+
+
+INSERT INTO Borrowed_Books (Borrow_ID, Book_ID, Member_ID, Borrow_Date, Return_Date)
+VALUES 
+(1, 1, 1, '2024-04-01', NULL),
+(2, 2, 2, '2024-05-01', '2024-05-10'),
+(3, 3, 3, '2024-03-15', NULL),
+(4, 4, 4, '2024-04-20', '2024-05-05'),
+(5, 5, 5, '2024-04-25', '2024-05-15'),
+(6, 6, 6, '2024-03-10', '2024-03-20'),
+(7, 7, 7, '2024-02-05', '2024-02-25'),
+(8, 8, 8, '2024-01-20', '2024-02-10'),
+(9, 9, 9, '2024-03-01', NULL),
+(10, 10, 10, '2024-04-01', '2024-04-21'),
+(11, 11, 11, '2024-05-11', NULL),
+(12, 12, 12, '2024-05-15', NULL),
+(13, 13, 13, '2024-02-25', '2024-03-15'),
+(14, 14, 14, '2024-03-01', '2024-03-25'),
+(15, 15, 15, '2024-01-15', '2024-02-05'),
+(16, 16, 16, '2024-04-10', '2024-04-30'),
+(17, 17, 17, '2024-02-20', '2024-03-10'),
+(18, 18, 18, '2024-03-05', '2024-03-25'),
+(19, 19, 19, '2024-05-05', NULL),
+(20, 20, 20, '2024-04-25', '2024-05-15'),
+(21, 21, 21, '2024-05-01', NULL),
+(22, 22, 22, '2024-05-03', NULL),
+(23, 23, 23, '2024-04-15', '2024-05-05'),
+(24, 24, 24, '2024-02-25', '2024-03-15'),
+(25, 25, 25, '2024-03-10', '2024-03-30');

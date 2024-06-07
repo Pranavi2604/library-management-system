@@ -15,8 +15,4 @@ FROM Borrowed_Books
 GROUP BY YEAR(Borrow_Date);
 
 
-SELECT b.Title, COUNT(bb.Book_ID) AS Times_Borrowed
-FROM Borrowed_Books bb
-JOIN Books b ON bb.Book_ID = b.Book_ID
-GROUP BY b.Title
-ORDER BY Times_Borrowed DESC
+
